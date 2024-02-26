@@ -703,8 +703,6 @@ div#popupNotification{
 /* popup beacons*/
 
 #popupContent-popup{
-    /*top: 0px !IMPORTANT;
-    left: 15px !important;*/
     margin: auto;
 }
 div#popupContent-header{
@@ -788,7 +786,7 @@ div#popupContent a#seemore{
     font-family: "Helvetica Medium";
     position: fixed;
     width: 96%;
-    height: 40px !important;
+    height: 80px !important;
     z-index: 1;
     top: 0 !important;
     padding-left: 3%;
@@ -910,8 +908,8 @@ div#popupContent a#seemore{
 }
 
 #home header .ui-block-b, #contents header .ui-block-b, #profile header .ui-block-b, #seecharge header .ui-block-b, #closechargelessinspection header .ui-block-b, #createInspectionWithoutLoad header .ui-block-b,#workersAnnex header .ui-block-b, #humanTrafficAnnex header .ui-block-b{
-    width: 27% !important;
-    margin-left: 3%;
+    width: 23% !important;
+    margin-left: 0%;
     float: right !important;
     text-align: right;
 }
@@ -1025,7 +1023,7 @@ div#popupContent a#seemore{
     background-image: url('../img/options_icon.png') !important;
     background-color: transparent !important;
     background-repeat: no-repeat !important;
-    background-size: 35% !important;
+    background-size: 25px !important;
     background-position: center;
     background-color: transparent;
     width: 22px !important;
@@ -1036,7 +1034,7 @@ div#popupContent a#seemore{
     border-style: none !important;
     border-color: initial !important;
     border-image: initial !important;
-    padding: 0;
+    /* padding: 0; */
     height: 2em;
     text-indent: -9999px;
     white-space: nowrap!important;
@@ -1215,7 +1213,6 @@ div#popupContent a#seemore{
 
 #showcontent>.ui-content>.ui-grid-a>.ui-block-a>#userValuations, #showcontent>.ui-content>.ui-grid-a>.ui-block-b>.share-button {
     width: 100% !important;
-    /* margin-top: 5px; */
     display: table;
 }
 
@@ -1750,7 +1747,6 @@ div#comments-button-set {
 
 #formProfile .input-left, #formRegister .input-left{
     text-align: left !important;
-    /* margin-right: 20px; */
     float: left !important;
     width: 90% !important;
     margin-left: 0px !important;
@@ -1815,8 +1811,8 @@ div#comments-button-set {
 }
 
 #login, #forcepassword, #forgetpassword{
-    background-color: #bfbfbf;
-    color: white;
+    background-color: transparent;
+    color: #5d1a8f;
     bottom: 0px;
     text-align: center;
     background-image: url("../img/background_transparent.png");
@@ -1828,6 +1824,11 @@ div#comments-button-set {
 #login .ui-content, #forgetpassword .ui-content, #login .ui-content, #forcepassword .ui-content{
     vertical-align: middle;
     height: 94.3%;
+}
+
+#forcepassword .ui-content {
+    max-height: 63%;
+    height: 63%
 }
 
 #login .ui-content{
@@ -1844,7 +1845,7 @@ div#comments-button-set {
     width: 2em;
     height: 2em;
     float: right;
-    background: rgba(255, 255, 255, 0) url('../img/offline.png') no-repeat center center;
+    background: url('../img/offline.png') no-repeat center center;
     background-size: contain;
 }
 
@@ -1860,23 +1861,37 @@ div#comments-button-set {
 
     height: 2em;
     float: right;
-    background: rgba(255, 255, 255, 0) url('../img/online.png') no-repeat center center;
+    background: url('../img/online.png') no-repeat center center;
     background-size: contain;    
 }
 .app-logo{
-    background-image: url("../img/logocompletoblanco.png");
+    background-image: url(../img/logocompletoblanco.png);
     background-size: 70%;
     display: block;
     background-position: center;
     background-repeat: no-repeat;
-    min-width: 262px;
-    width: 80% !important;
-    min-height: 171px;
-    height: 30% !important;
-    margin-top: 8%;
-    margin-bottom: 10%;
+    width: 240px !important;
+    height: 185px !important;
     margin-left: auto;
     margin-right: auto;
+}
+
+.app-logo-home {
+    background-size: 55%;
+    width: 28vw !important;
+    height: 109px !important;
+    float: left;
+    position: absolute;
+    top: -27px;
+    margin: 0 !important;
+    z-index: 5;
+    left: 43px !important;
+    background-position-x: 75%;
+    background-position-y: 75%;
+}
+
+#forgetpassword .app-logo, #forcepassword .app-logo {
+    margin: 10.5% auto 0 auto;
 }
 
 #formLogin, #formForcePassword, #formForgetPassword{
@@ -1912,7 +1927,6 @@ div#comments-button-set {
     background-position-x: 0px;
     background-position-y: 50%;
     width: 100%;
-    /* max-width: 300px; */
     margin-left: 0;
     margin-bottom: 5%;
     height: 4em;
@@ -1944,6 +1958,7 @@ div#comments-button-set {
 #formLogin .ui-input-btn, #formForcePassword .ui-input-btn, #formForgetPassword .ui-input-btn, #seecharge #btnDownloadSeeCharge, .button-download{
     width: 70%;
     margin: 50px auto;
+    margin-bottom: 30px;
     max-width: 240px;
     font-family: "Helvetica Roman";
     text-shadow: none !important;
@@ -2002,6 +2017,8 @@ div#comments-button-set {
 }
 
 .title-long{
+    color: #5d1a8f;
+    font-size: 1.4rem;
     margin-left: auto;
     margin-right: auto;
 }
@@ -2254,4 +2271,8 @@ a#val_1_popup:after, a#val_2_popup:after, a#val_3_popup:after, a#val_4_popup:aft
 
 .ui-loader.ui-corner-all.ui-body-a.ui-loader-verbose.ui-loader-textonly h1 {
     display: none;
+}
+
+.register-btn {
+    margin-top: 20px;
 }

@@ -145,8 +145,8 @@ function initLogin() {
                 var lapsed = parseInt( moment(t).fromNow() );
                 
                 //$(".ui-grid-a").append("("+(ft+1)+") "+lapsed+" transcurrido")
-                $(".ui-grid-a").html('')
-                $(".ui-grid-a").append('<div class="" style="position: absolute;z-index: 10;margin: 3%;">('+(firstTimeHome)+') '+lapsed+' transcurrido</div>')
+                //$(".ui-grid-a").html('')
+                //$(".ui-grid-a").append('<div class="" style="position: absolute;z-index: 10;margin: 3%;">('+(firstTimeHome)+') '+lapsed+' transcurrido</div>')
                 
                 var actual_hash = location.hash.split("?")[0];
                 if (actual_hash != "#login" && actual_hash != "" && location.hashs != undefined)  {

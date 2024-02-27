@@ -140,7 +140,7 @@ function initLogin() {
     //setTimeout(function() {
         //sessionStatus();
         //setTimeout(function() {
-            if ( localStorage.session != undefined ) {
+            if ( localStorage.session != undefined && JSON.parse(localStorage.session).length > 0) {
                 var t = JSON.parse(localStorage.session)[0].lastSessionUpdate;
                 var lapsed = parseInt( moment(t).fromNow() );
                 

@@ -109,13 +109,8 @@ function initTaggs(){
                                             <img src="'+json[i].imgs+'" class="car_pet_image">\
                                             <div class="content_grid_cards">\
                                                 <div class="ui-grid-a">\
-                                                    <div class="ui-block-a" style="width: 20%;">\
-                                                        <div class="ui-bar ui-bar-a" style="/* height: 32px; */">\
-                                                            <a href="index.html" class="ui-btn ui-shadow ui-corner-all ui-icon-tag ui-btn-icon-notext"></a>\
-                                                        </div>\
-                                                    </div>\
                                                     <div class="ui-block-b" style="width: 80%;height: 35px;padding: 2% 0;">\
-                                                        <div class="ui-bar ui-bar-a" style="height: 40px;line-height: 2;"><small style="font-size: .8rem;font-weight: 700;">'+json[i].nombre+'-TAGG'+json[i].id_device+'#'+json[i].id_user+'</small></div>\
+                                                        <div class="ui-bar ui-bar-a" style="height: 40px;line-height: 2 !important;"><small style="font-size: 1rem;font-weight: 700;">'+json[i].nombre+'-TAGG'+json[i].id_device+'#'+json[i].id_user+'</small></div>\
                                                     </div>\
                                                 </div>\
                                                 <div class="ui-grid-a">\

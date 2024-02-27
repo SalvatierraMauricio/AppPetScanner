@@ -1878,17 +1878,14 @@ div#comments-button-set {
 }
 
 .app-logo-home {
-    background-size: 55%;
-    width: 28vw !important;
-    height: 109px !important;
-    float: left;
+    background-size: contain;
+    width: 20vw !important;
+    height: 66px !important;
     position: absolute;
-    top: -27px;
+    top: 8px;
     margin: 0 !important;
     z-index: 5;
-    left: 43px !important;
-    background-position-x: 75%;
-    background-position-y: 75%;
+    left: 30px !important;
 }
 
 #forgetpassword .app-logo, #forcepassword .app-logo {

@@ -151,6 +151,7 @@ h1 {
     top: 0 !important;
     left: 0 !important;
     margin: 0 !important;
+    padding: 2px;
 }
 
 .ui-loader .ui-icon-loading{

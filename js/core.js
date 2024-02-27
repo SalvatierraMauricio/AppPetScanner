@@ -18,7 +18,7 @@
 
 // Esto se ejecutará cuando la página termine de cargar
 $(document).ready(function() {
-
+    var userFields = [];
     init();
     // Funciones de inicio al entrar en distintas secciones
     $(document).off("pageshow", "#login").on("pageshow", "#login", initLogin);
@@ -86,7 +86,7 @@ var firstTimeHome = true;
 //Política de seguridad de la contraseña
 var policy = [];
 //Variable que guarda datos de usuario
-userFields = [];
+var userFields = [];
 
 //Variable que guarda cantidad de campos validos
 var valids = 0;

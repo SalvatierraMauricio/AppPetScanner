@@ -125,7 +125,7 @@
                 <div id="errorMessageHome"></div>
                 <div id="successMessageHome"></div>
                 <div id="infoMessageHome"></div>
-                <div id="content_loader" style="margin: 80% 0;">
+                <div id="content_loader" style="display: block;background: linear-gradient(rgba(242, 234, 211, 0.4), rgb(179 179 179 / 35%)), url(img/paw_bck.jpg);background-size: 86%;position: absolute;z-index: 1000000000;top: 0;width: 100vw;height: 100vh;">
                     <img src="https://media.tenor.com/On7kvXhzml4AAAAj/loading-gif.gif" class="img_loader_content">
                 </div>
                 <ul id="cards" class="ui-listview"></ul>                
@@ -137,41 +137,32 @@
         </section>
 
         <section id="mapa" data-role="page">
-            <div class="app-logo" style="background-size: 70%;width: 15vw !important;min-width: 35vw !important;height: 139px !important;float: left;position: absolute;top: -11px;margin: 0 !important;z-index: 5;"></div>
-            <header data-role="header" data-position="fixed">
+ 
+             <!-- Inicio menu header -->
+            <div class="app-logo app-logo-home"></div>
+            <header data-role="header" data-position="fixed">                    
                 <fieldset class="ui-grid-a">
                     <div class="ui-block-a">
                         <div class="iconHome"></div>
                     </div>
-                    <div class="ui-block-b">
+                    <nav data-role="navbar" data-iconpos="top">
+                        <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>                    
+                    </nav>                    
+                    <!-- <div class="ui-block-b">
                         <div class="stateconnection stateConnectionOnline"></div>
-                    </div>     
+                    </div> -->
+                    <div class="ui-block-b contenedor">
+                        <h2 class="titulo">Pet Scanner</h2>
+                    </div>                    
                 </fieldset>
-            </header>                      
-            <div data-role="panel" class="option-menu-panel" data-position="left" data-display="overlay">
-                <header data-role="header" data-position="fixed" role="banner" class="ui-header ui-bar-inherit ui-header-fixed slidedown">
-                    <h4>CONFIGURACI&Oacute;N</h4>
-                </header>
-                <div data-role="content" class="content-panel">
-                    <a href="#createInspectionWithoutLoad" class="option-menu-lateral">INSPECCIÓN SIN CARGO</a>
-                    <a id="workersAnnex_inspectionWithoutCharge_secondary" class="option-menu-lateral">ANEXO DE TRABAJADORES</a>
-                    <a id="close-session-home" class="option-menu-lateral">CERRAR SESI&Oacute;N</a>
-                </div>
-            </div>
-
-             <!-- Inicio menu header -->
-            <div data-id="menu" data-position="fixed" data-theme="b" class="main-menu">
-                <nav data-role="navbar" data-iconpos="top">
-                    <button class="ui-btn ui-btn-inline ui-shadow ui-corner-all" id="options-menu-home" align="right"> </button>                    
-                </nav>
-            </div>
+            </header>  
             <!-- Fin menu header -->            
            
             <div data-role="content" class="ui-content-page">       
                 <div id="errorMessageHome"></div>
                 <div id="successMessageHome"></div>
                 <div id="infoMessageHome"></div>
-                <div id="map" style="height: 285px;width: 100%;position: relative;overflow: hidden;margin-top: 21.5%;"></div>
+                <div id="map" style="height: 285px;width: 100%;position: relative;overflow: hidden;"></div>
                 <img id="pet_image" src="" style="width: 35%;min-width: 35%;min-height: 150px;position: absolute;z-index: 100;bottom: 18.5em;left: .5em;">
                 <div class="info-pet">
                     <div data-role="collapsible">

@@ -125,7 +125,7 @@ function initTaggs(){
                                                         </div>\
                                                     </div>\
                                                     <div class="ui-block-b" style="width: 80%;height: 35px;padding: 2% 0;">\
-                                                        <div class="ui-bar ui-bar-a" style="height: 40px;line-height: 2;">'+userFields[0].nombre+'</div>\
+                                                        <div class="ui-bar ui-bar-a" style="height: 40px;line-height: 2;">'+userFields.nombre+'</div>\
                                                     </div>\
                                                 </div>\
                                                 <div class="ui-grid-a">\
@@ -150,11 +150,11 @@ function initTaggs(){
                     $("#map_"+i).click(function() {
                         $.mobile.navigate( $(this).attr("href-data") );
                     });
-                    $("#content_loader").fadeOut()
                 }else{
                     $("#cards").fadeOut()
                     $(".content_scan_banner").fadeIn()
                 }
+                $("#content_loader").fadeOut()
             
             }
           

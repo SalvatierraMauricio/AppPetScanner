@@ -2,6 +2,7 @@
 //var modules = {beaconsModule: beaconsModule, gpsModule: gpsModule};
 var modules = {taggsModule: taggsModule};
 
+var userFields = "";
 
 // Esto se ejecutará cuando la página termine de cargar
 $(document).ready(function() {
@@ -23,31 +24,6 @@ function ready() {
     //initMenuOptions();
 }
 
-//Inicializa las opciones de menú para las distintas secciones
-// function initMenuOptions() {
-//     for (var m in modules) {
-//         modules[m].initMenuOptions();
-//     }
-//     updateOptionsView();
-// }
-
-
-
-// function initCheckbox() {
-//     var pageActive = jQuery.mobile.activePage[0].id;
-//     if ((pageActive != "login") && (pageActive != "forgetpassword") && (pageActive != "forcepassword")) {
-//         for (var m in modules) {
-//             modules[m].initCheckbox();
-//         }
-//         $(".main-menu-option").find('.ui-btn-b').each(function() {
-//             $(this).removeClass("ui-btn-b");
-//         });
-//         $(".btn-selected").remove();
-//         var selected = $("#" + pageActive).find(".ui-btn-icon-" + pageActive);
-//         $(selected).addClass("ui-btn-b");
-//         $(selected).parent().append('<div class="btn-selected"></div>');
-//     }
-// }
 
 //Inicializa pantalla Home
 function initHome() {
@@ -110,6 +86,7 @@ function validateUser(userInfo) {
             contentType : 'application/json',
             success : function(json){
                 userFields = json;
+                console.log(json,"<---")
                 if(json.length > 0){
                     if (email == json[0].email && password_user == json[0].pass) {
                         loginSuccess(userInfo);

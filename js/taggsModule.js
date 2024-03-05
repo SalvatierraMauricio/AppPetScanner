@@ -1,6 +1,7 @@
 /* declaraciones de variables específicas del módulo */
 var actualPage = location.hash.split("#")[1];
 var inHome = false;
+var userFields = "";
 /* funciones básicas del módulo que son llamadas desde framework */
 taggsModule.ready = function(){
     //Esto se ejecutará cuando la página termine de cargar
@@ -120,7 +121,7 @@ function initTaggs(){
                                                         </div>\
                                                     </div>\
                                                     <div class="ui-block-b" style="width: 80%;height: 35px;padding: 2% 0;">\
-                                                        <div class="ui-bar ui-bar-a" style="height: 40px;line-height: 2;">'+userFields.nombre+'</div>\
+                                                        <div class="ui-bar ui-bar-a" style="height: 40px;line-height: 2;">'+userFields[0].nombre+'</div>\
                                                     </div>\
                                                 </div>\
                                                 <div class="ui-grid-a">\
